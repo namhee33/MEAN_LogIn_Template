@@ -1,0 +1,9 @@
+
+Login user: {{uc.login_user.name}}
+<h3 ng-if="uc.login_user.name === undefined || uc.login_user.name.length <= 0"> You need to login, first! <a href='#/login'>Go login</a></h3>
+<div ng-if="uc.login_user.name.length > 1">
+	<a href='#/login' role='button' ng-click="uc.logout()">Log Out</a> | <a href='#/main'>Main Home</a>
+	<h2> User Name: {{uc.login_user.name}}</h2>
+
+
+</div>
